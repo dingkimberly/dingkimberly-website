@@ -1,11 +1,13 @@
 var express = require('express');
 var app = express();
 
+var favicon = require('express-favicon');
+
 app.set('port', (process.env.PORT || 5000));
 
-app.use('/favicon.ico', express.static('images/favicon.ico'));
-
 app.use(express.static(__dirname + '/public'));
+
+app.use(favicon(__dirname + '/images/favicon.ico'));
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
