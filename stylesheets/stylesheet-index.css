@@ -21,19 +21,28 @@ a:active { text-decoration: none; color: #4169e1; }
 .header {
 	margin: 0;
 	padding: 25px;
-	background-color: #ffd199;
-	border-bottom: 5px solid #e77500;
+	background-color: #eb9494;
+	border-bottom: 5px solid #961d1d;
 }
 
 h1 { padding-bottom: 10px; }
 
-h3 { color: #e77500; }
+h2 { padding-bottom: 10px; text-decoration-line: underline; }
+
+h3 { color: #961d1d; }
 
 .portrait {
 	float: right;
 	margin-left: 25px;
 	width: 30%;
-	border: 2px solid #333333;
+	border: 3px solid #333333;
+}
+
+.princetonshield {
+	float: right;
+	margin-left: 50px;
+	width: 12%;
+
 }
 
 .transparentbg {
