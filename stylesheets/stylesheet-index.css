@@ -1,0 +1,64 @@
+html { 
+	background-color: #F5F5F5;
+	color: #333333;
+	
+    	border: 0;
+    	outline: 0;
+  	vertical-align: baseline;
+
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+a { text-decoration: none; }
+a:link { color: #708090; font-weight: bold; }
+a:hover { color: #9aa6b1; font-weight: bold; }
+a:visited { color: #708090; }
+a:active { color: #708090; }
+
+.header {
+	margin: 0;
+	padding: 25px;
+	background-color: #bfbfbf;
+}
+
+h1 { padding-bottom: 10px; }
+
+h2 { padding-bottom: 10px; }
+
+.transparentbg {
+	padding: 25px;
+	background-color: #transparent;
+}
+
+.whitebg {
+	padding: 25px;
+	background-color: white;
+}
+
+.text {
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 25px;
+}
+
+.education {
+	padding: 25px;
+	background-color: white;
+}
+
+.projects {
+	padding: 25px;
+	background-color: transparent;
+
+}
+
+.achievements {
+	padding: 25px;
+	background-color: white;
+}
+
+.contact {
+	padding: 25px;
+	background-color: transparent;
+}
