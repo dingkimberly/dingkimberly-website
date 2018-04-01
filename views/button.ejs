@@ -30,7 +30,7 @@ body {
 <body onload="buttonload()">
 
 <center>
-<button class="button" onclick="increment()"></button>
+<button class="button" id="button" onclick="increment()"></button>
 
 
 <p>
@@ -63,7 +63,7 @@ function buttonload() {
 }
 
 function increment() {
-	if (value != 69) value++;
+
 	document.getElementById("count").innerHTML = value;
 	if (value == 1) {
 		document.getElementById("times").innerHTML = "time";
@@ -85,6 +85,7 @@ function nice() {
 	document.getElementById("count").innerHTML = value;
 	document.getElementById("times").innerHTML = "times";
 	document.getElementById("line2").innerHTML = "Nice.";
+	document.getElementById("button").style.display = 'none';
 	document.getElementById("resetbutton").style.display = 'none';
 
 }
