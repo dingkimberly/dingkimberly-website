@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Button</title>
+
+<link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet-button.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact%20Gothic">
+
+<%#-----------------------------------------------------------------%>
+
+<style>
+
+body {
+	font-family: 'Didact Gothic';
+	font-size: 20px;
+}
+
+</style>
+
+
+<%#-----------------------------------------------------------------%>
+
+</head>
+
+<body onload="buttonload()">
+
+<center>
+<button class="button" onclick="increment()"></button>
+
+
+<p>
+The button above has been clicked <span id="count"></span> <span id="times"></span>.
+</p>
+
+<p>
+To reset the counter, click the button below.
+</p>
+
+
+<button class="resetbutton" onclick="reset()"></button>
+
+</center>
+
+
+
+<script>
+
+var value = 0;
+
+function buttonload() {
+	document.getElementById("count").innerHTML = value;
+	if (value == 1) {
+		document.getElementById("times").innerHTML = "time";
+	}
+	else {
+		document.getElementById("times").innerHTML = "times";
+	}
+}
+
+function increment() {
+	value++;
+	document.getElementById("count").innerHTML = value;
+	if (value == 1) {
+		document.getElementById("times").innerHTML = "time";
+	}
+	else {
+		document.getElementById("times").innerHTML = "times";
+	}
+}
+
+function reset() {
+	value = 0;
+	document.getElementById("count").innerHTML = value;
+	document.getElementById("times").innerHTML = "times";
+}	
+
+</script>
+
+</body>
+
+
+</html>
