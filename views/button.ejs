@@ -22,7 +22,6 @@ body {
 
 </style>
 
-
 <%#-----------------------------------------------------------------%>
 
 </head>
@@ -31,7 +30,6 @@ body {
 
 <center>
 <button class="button" id="button" onclick="increment()"></button>
-
 
 <p>
 The green button has been clicked <span id="count"></span> <span id="times"></span>.
@@ -43,10 +41,11 @@ To reset the counter, click the red button.
 </span>
 </p>
 
-
 <button class="resetbutton" id="resetbutton" onclick="reset()"></button>
 
 </center>
+
+<%#-----------------------------------------------------------------%>
 
 <script>
 
@@ -68,10 +67,18 @@ function increment() {
 	if (value == 1) {
 		document.getElementById("times").innerHTML = "time";
 	}
-	else if (value == 69) { nice(); }
-	else if (value == 70) { unnice(); }
 	else {
 		document.getElementById("times").innerHTML = "times";
+	}
+
+	if (value == 69) { 
+		document.getElementById("line2").innerHTML = "Nice.";
+	}
+	else if (value == 420) { 
+		document.getElementById("line2").innerHTML = "Nice!";
+	}
+	else { 
+		document.getElementById("line2").innerHTML = "To reset the counter, click the red button.";
 	}
 }
 
@@ -79,17 +86,13 @@ function reset() {
 	value = 0;
 	document.getElementById("count").innerHTML = value;
 	document.getElementById("times").innerHTML = "times";
-}	
-function nice() {
-	document.getElementById("line2").innerHTML = "Nice.";
-}
-function unnice() {
 	document.getElementById("line2").innerHTML = "To reset the counter, click the red button.";
 }
 
 </script>
 
-</body>
+<%#-----------------------------------------------------------------%>
 
+</body>
 
 </html>
