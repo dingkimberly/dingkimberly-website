@@ -27,6 +27,10 @@ app.get('/secrets', function(request, response) {
 	response.render('secrets')
 });
 
+app.get('/todolist', function(request, response) {
+	response.render('todolist')
+});
+
 /*-----------------------------------------------------------------*/
 
 // Connect to Postgres
