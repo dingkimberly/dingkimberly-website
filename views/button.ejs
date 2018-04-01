@@ -63,7 +63,7 @@ function buttonload() {
 }
 
 function increment() {
-	value++;
+	if (value != 69) value++;
 	document.getElementById("count").innerHTML = value;
 	if (value == 1) {
 		document.getElementById("times").innerHTML = "time";
