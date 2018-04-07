@@ -15,20 +15,25 @@ app.use("/stylesheets", express.static(__dirname + '/stylesheets'));
 
 /*-----------------------------------------------------------------*/
 
-app.get('/', function(request, response) {
-	response.render('index')
+app.get('/', function(req, res) {
+	res.render('index')
 });
 
-app.get('/button', function(request, response) {
-	response.render('button')
+app.get('/button', function(req, res) {
+	res.render('button')
 });
 
-app.get('/secrets', function(request, response) {
-	response.render('secrets')
+app.get('/secrets', function(req, res) {
+	res.render('secrets')
 });
 
-app.get('/todolist', function(request, response) {
-	response.render('todolist')
+app.get('/todolist', function(req, res) {
+	res.render('todolist')
+});
+
+app.get('/stories/:id', function(req, res) {
+	var id = "stories-" + req.params.id
+	res.render(id)
 });
 
 /*-----------------------------------------------------------------*/
