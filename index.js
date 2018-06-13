@@ -31,8 +31,8 @@ app.get('/todolist', function(req, res) {
 	res.render('todolist')
 });
 
-app.get('/stories/:id', function(req, res) {
-	var id = "stories-" + req.params.id
+app.get('/writing/:id', function(req, res) {
+	var id = "writing-" + req.params.id
 	res.render(id)
 });
 
