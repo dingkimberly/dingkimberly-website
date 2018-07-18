@@ -27,12 +27,17 @@ app.get('/secrets', function(req, res) {
 	res.render('secrets')
 });
 
-app.get('/todolist', function(req, res) {
+/* app.get('/todolist', function(req, res) {
 	res.render('todolist')
 });
+*/
 
 app.get('/faq', function(req, res) {
 	res.render('faq')
+});
+
+app.get('/test', function(req, res) {
+	res.render('test')
 });
 
 app.get('/writing/:id', function(req, res) {
