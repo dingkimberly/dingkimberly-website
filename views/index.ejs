@@ -13,6 +13,9 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
 
+<meta charset="utf-8">
+<meta name="Description" CONTENT="The personal website of Kimberly Ding.">
+
 </head>
 
 <%#-----------------------------------------------------------------%>
@@ -33,16 +36,9 @@ body {
 <div class="header">
 
 <center>
-
-<h1 style="padding-top:15px;"> KIMBERLY DING </h1>
-
-<p>
-
-I made this.
-
-</p>
-
+<h1 style="padding:15px;"> KIMBERLY DING </h1>
 </center>
+
 
 </div>
 
@@ -50,99 +46,83 @@ I made this.
 
 <div class="transparentbg">
 
-<div class="text">
+<div class="greeting">
+<center><h3>Nice to meet you!</h3></center>
+</div>
 
-<h2 style="padding-bottom: 1%"> ABOUT ME </h2>
+<div class="row">
 
+    <div class="col-image">
+            <img class="portrait" src="/images/portrait.png">
+    </div>
 
+    <div class="col-text">
+        <h2 style="padding-bottom: 1%"> ABOUT ME </h2>
+        <div class="text">
+            <p>
+            Hi, I'm Kimberly! Currently, I'm an undergraduate student pursuing a degree in
+            computer science at Princeton. My interests include math and the more theoretical sides of
+            computer science, especially machine learning. I have experience in software engineering and web development.
+            </p></br>
 
-<p><img class="portrait" src="/images/portrait.png">
+            <p>
+            In my free time, I enjoy reading speculative fiction, jogging, and drinking bubble tea. Sometimes I also think
+            of more stuff to do to this website. Right now it's not very flashy, but try resizing this window and
+            see how the elements adjust!
+            </p></br>
 
+            <p>
+            Fun facts about me:
+            <li>I used to play competitive chess</li>
+            <li>I can type at around 160 words per minute</li>
+            <li>My favorite color is blue</li>
+            </p></br>
 
-Hi, I'm Kimberly. I'm currently an undergraduate student pursuing a degree in computer science at Princeton. My interests are math and the more theoretical sides of computer science, especially machine learning. 
-
-<br></br>
-
-In my free time, I enjoy reading all sorts of things, writing short stories, and listening to ridiculous music. I used to play in youth chess tournaments, but now I play chess just for fun. If I have the time, I'm willing to travel long distances to get some bubble tea. I really like bubble tea.
-
-<br></br>
-
-Fun fact: I can type at around 150 words per minute!
-
-<br></br>
-
-Take a look at my <a href="http://dingkimberly.herokuapp.com/files/CV.pdf" target="_blank">CV</a> or read more below. 
-
-
-</p>
-
-<br style="clear: both;" />
+            <p>
+            Take a look at my <a href="http://dingkimberly.herokuapp.com/files/CV.pdf" target="_blank">CV</a>
+            or read more below.
+            </p>
+        </div>
+    </div>
 
 
 
 </div>
+
 </div>
+
 
 <%#-----------------------------------------------------------------%>
 
 <div class="whitebg">
-
-<div class="text">
-
-<h2> EDUCATION </h2>
-
-
-<div><img class="princetonshield" src="/images/princetonshield.png">
-
-<h3>Princeton University</h3>
-
-<h4>
-Bachelor of Science and Engineering in Computer Science
-</h4>
-
-2017 – 2021 (prospective)
-
-<p style="padding-top: 1%;">
-<b>Relevant coursework:</b> Algorithms and Data Structures (COS226), Introduction to Programming Systems (COS217), Probability and Stochastic Systems (ORF309), Advanced Vector Calculus (MAT203), Linear Algebra with Applications (MAT202)
-</p>
-
-<br style="clear: both;" />
-</div>
-
-<p>
-
-</p>
-
-
-</div>
-</div>
-
-<%#-----------------------------------------------------------------%>
-
-<div class="transparentbg">
-
-<div class="text">
 
 <h2>PROJECTS</h2>
 
-<h3>Time-series prediction programs</h3>
+<div class="text">
 
-<p>
-As a research assistant in Princeton University's computer science department, I wrote Python programs that implemented various algorithms that performed online time-series prediction. I also tested these implementations on generated and real-world data. 
-</p>
+    <h3>Time-series prediction programs</h3>
 
+    <p>
+    As a research assistant in Princeton University's computer science department, I implemented various algorithms that
+    performed online time-series prediction. I also tested these implementations on generated and real-world data.
+    </p>
 
-<h3>dingkimberly.herokuapp.com</h3>
+    </br>
 
-<p>
-I made this website (without a template)! 
-</p>
+    <h3>dingkimberly.herokuapp.com</h3>
 
-<h3>RemindList</h3>
+    <p>
+    I made this website without a template, writing most of the source code myself.
+    </p>
 
-<p >
-I created a simple reminder app for iOS. Users could save multiple reminders to a list, name each reminder, and add dates, times, and descriptions. 
-</p>
+    </br>
+
+    <h3>RemindList</h3>
+
+    <p>
+    I created a simple reminder app for iOS. Users could save multiple reminders to a list,
+    name each reminder, and add dates, times, and descriptions.
+    </p>
 
 </div>
 
@@ -151,59 +131,28 @@ I created a simple reminder app for iOS. Users could save multiple reminders to 
 <%#-----------------------------------------------------------------%>
 
 
-<div class="whitebg">
+<section class="transparentbg" >
+
+<h2>CONTACT ME</h2>
 
 <div class="text">
 
-<h2 style="padding-bottom: 1%">CONTACT ME</h2>
-
 <p>
-
-Email:
-
-<a href="mailto:dingkimberly@gmail.com">dingkimberly@gmail.com</a>
+Email: <a href="mailto:dingkimberly@gmail.com">dingkimberly@gmail.com</a>
 </p>
 
 <p>
-
-Facebook:
-<a href="https://www.facebook.com/dingkimberly" target="_blank">dingkimberly</a>
-
+LinkedIn: <a href="https://www.linkedin.com/in/dingkimberly/" target="_blank">dingkimberly</a>
 </p>
 
 <p>
-
-LinkedIn:
-
-<a href="https://www.linkedin.com/in/dingkimberly/" target="_blank">dingkimberly</a>
-
-</p>
-
-<p>
-
-GitHub:
-
-<a href="https://github.com/dingkimberly" target="_blank">dingkimberly</a>
-
+GitHub: <a href="https://github.com/dingkimberly" target="_blank">dingkimberly</a>
 </p>
 
 </div> 
-</div>
+</section>
 
-<%#-----------------------------------------------------------------%>
-
-<div class="transparentbg">
-
-<div class="text">
-
-<h2 style="padding-bottom: 1%"> MISCELLANEOUS </h2>
-
-<li>
-<a href="https://dingkimberly.herokuapp.com/faq" target="_blank">Frequently asked questions</a>
-</li>
-
-</div>
-</div>
+</br></br>
 
 <%#-----------------------------------------------------------------%>
 
