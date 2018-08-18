@@ -21,49 +21,85 @@ a:active { text-decoration: none; color: #4169e1; }
 .header {
 	margin: 0;
 	padding: 2%;
-	background-color: #eb9494;
-	border-bottom: 5px solid #961d1d;
+	background-color: #91a8ee;
+	border-bottom: 5px solid #3862e0;
 }
 
-h1 { padding-bottom: 1%; text-decoration-line: underline;}
+h1 { padding-bottom: 1%;}
 
-h2 { text-decoration-line: underline; }
+h2 { padding-bottom: 2%; }
 
-h3 { color: #961d1d; padding-top: 1%}
+.greeting {
+    padding-bottom: 3%;
+}
 
-h4 {padding-top: 0.5%}
-
-
-
+.col-image {
+    position: relative;
+    text-align: center;
+    min-height: 1px;
+}
+.col-text {
+    position: relative;
+    min-height: 1px;
+    text-align: left;
+}
 .portrait {
-	float: left;
-	margin-right: 25px;
-	width: 30%;
-	border: 3px solid #333333;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid #333333;
 }
 
-.princetonshield {
-	float: right;
-	margin-left: 50px;
-	width: 12%;
+@media (min-width: 769px) {
+  .greeting {
+    display: none;
+    width: 0%;
+    height: 0%;
+  }
+  .col-image {
+    float: right;
+    width: 40%;
+  }
+  .col-text {
+    float: right;
+    width: 60%;
+  }
+  .portrait {
+    width: calc(40vw - 50px);
+    min-width: 280px;
+    max-width: 500px;
+    margin: 20px;
+  }
+}
 
+@media (max-width: 768px) {
+
+  .portrait {
+  	display: inline-block;
+  	float: center;
+  	text-align: center;
+    width: 50%;
+    min-width: 350px;
+    margin-bottom: 3%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .transparentbg {
-	padding: 25px;
+	padding: 5%;
 	background-color: transparent;
 }
 
 .whitebg {
-	padding: 25px;
+	padding: 5%;
 	background-color: white;
 }
 
-
-
-
 .text {
-	margin-left: 100px;
-	margin-right: 100px;
-	padding: 25px;
+    text-align: left;
 }
