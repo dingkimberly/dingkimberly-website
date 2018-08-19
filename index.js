@@ -19,10 +19,6 @@ app.get('/', function(req, res) {
 	res.render('index')
 });
 
-app.get('/secrets', function(req, res) {
-	res.render('secrets')
-});
-
 app.get('/faq', function(req, res) {
 	res.render('faq')
 });
