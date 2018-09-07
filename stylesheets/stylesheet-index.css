@@ -27,7 +27,7 @@ a:active { text-decoration: none; color: #4169e1; }
 
 h1 { padding-bottom: 1%;}
 
-h2 { padding-bottom: 2%; }
+h2 { padding-bottom: 20px; }
 
 .greeting {
     padding-bottom: 3%;
