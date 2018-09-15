@@ -1,1 +1,3 @@
-Source code for my personal website.
+#dingkimberly.com
+
+This is the source code for my personal website.
