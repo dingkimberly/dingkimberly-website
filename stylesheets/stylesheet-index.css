@@ -12,17 +12,11 @@ html {
 
 br { line-height: 100%; }
 
-a:link { text-decoration: none; color: #4169e1; font-weight: 900; }
-a:hover { text-decoration: none; color: #a7b9f1; font-weight: 900; }
-a:visited { text-decoration: none; color: #4169e1; }
-a:visited:hover { text-decoration: none; color: #a7b9f1; font-weight: 900; }
-a:active { text-decoration: none; color: #4169e1; }
+a { text-decoration: none; font-weight: 900; }
 
-.header {
+#header {
 	margin: 0;
 	padding: 2%;
-	background-color: #91a8ee;
-	border-bottom: 5px solid #3862e0;
 }
 
 h1 { padding-bottom: 1%;}
@@ -43,10 +37,10 @@ h2 { padding-bottom: 20px; }
     min-height: 1px;
     text-align: left;
 }
-.portrait {
+
+#portrait {
     display: inline-block;
     text-align: center;
-    border: 3px solid #333333;
 }
 
 @media (min-width: 769px) {
@@ -63,7 +57,7 @@ h2 { padding-bottom: 20px; }
     float: right;
     width: 60%;
   }
-  .portrait {
+  #portrait {
     width: calc(40vw - 50px);
     min-width: 280px;
     max-width: 500px;
@@ -72,8 +66,7 @@ h2 { padding-bottom: 20px; }
 }
 
 @media (max-width: 768px) {
-
-  .portrait {
+  #portrait {
   	display: inline-block;
   	float: center;
   	text-align: center;

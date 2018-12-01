@@ -33,12 +33,11 @@ body {
 
 <body>
 
-<div class="header">
+<div id="header">
 
 <center>
 <h1 style="padding:15px;"> KIMBERLY DING </h1>
 </center>
-
 
 </div>
 
@@ -53,7 +52,7 @@ body {
     <div class="row">
 
         <div class="col-image">
-                <img class="portrait" src="/images/portrait.png">
+                <img id="portrait" src="/images/portrait.png">
         </div>
 
         <div class="col-text">
@@ -74,9 +73,9 @@ body {
 
                 <p>
                 Fun facts about me:
-                <li>I used to play competitive chess</li>
-                <li>I can type at around 160 words per minute</li>
-                <li>My favorite color is blue</li>
+                <li>I used to play competitive chess.</li>
+                <li>I can type at around 160 words per minute.</li>
+                <li>My favorite color varies from time to time. Right now, it's <span id="randcolor"></span>!</li>
                 </p></br>
 
                 <p>
@@ -87,6 +86,7 @@ body {
         </div>
     </div>
 </div>
+
 
 <%#-------------------------------------------------------------------------------------------------------------------%>
 
@@ -153,6 +153,39 @@ GitHub: <a href="https://github.com/dingkimberly" target="_blank">dingkimberly</
 </section>
 
 </br></br>
+
+<%#-------------------------------------------------------------------------------------------------------------------%>
+
+<script>
+
+        var colors = ['blue', 'red'];
+        var light_hex = ["#91a8ee", "#ff8080", "#999999", "#00b300"];
+        var dark_hex = ["#3862e0", "#ff0000", "#595959", "#006600"];
+        var rand_ind = Math.floor(Math.random()*colors.length);
+    
+        document.getElementById("randcolor").innerHTML = colors[rand_ind];
+    
+        document.getElementById("header").style.backgroundColor = light_hex[rand_ind];
+        document.getElementById("header").style.borderBottom = "5px solid " + dark_hex[rand_ind];
+
+        document.getElementById("portrait").style.border = "3px solid " + dark_hex[rand_ind];
+    
+        var links = document.getElementsByTagName("a");
+    
+        for(var i=0;i<links.length;i++)
+        {
+            var link = links[i];
+            link.style.color = dark_hex[rand_ind];
+            
+            link.addEventListener("mouseover", function() {
+                this.style.color = light_hex[rand_ind];
+            });
+            link.addEventListener("mouseout", function() {
+                this.style.color = dark_hex[rand_ind];
+            });
+        } 
+
+</script>
 
 <%#-------------------------------------------------------------------------------------------------------------------%>
 
