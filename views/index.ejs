@@ -36,7 +36,7 @@ body {
 <div id="header">
 
 <center>
-<h1 style="padding:15px;"> KIMBERLY DING </h1>
+<h1 style="padding:15px;">KIMBERLY DING</h1>
 </center>
 
 </div>
@@ -171,7 +171,15 @@ GitHub: <a href="https://github.com/dingkimberly" target="_blank">dingkimberly</
         var colors = ['blue', 'red'];
         var light_hex = ["#91a8ee", "#ff8080", "#999999", "#00b300"];
         var dark_hex = ["#3862e0", "#ff0000", "#595959", "#006600"];
-        var rand_ind = Math.floor(Math.random()*colors.length);
+        var rand = Math.floor(Math.random()*100);
+        var rand_ind;
+
+        if (rand <= 2) {
+            rand_ind = 0;
+        }
+        else {
+            rand_ind = 1;
+        }
     
         document.getElementById("randcolor").innerHTML = colors[rand_ind];
     
