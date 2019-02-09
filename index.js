@@ -27,10 +27,6 @@ app.get('/faq', function(req, res) {
 	res.render('faq')
 });
 
-app.get('/test', function(req, res) {
-	res.render('test')
-});
-
 /*
 
 app.get('/writing/:id', function(req, res) {
